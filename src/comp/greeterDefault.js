@@ -4,6 +4,6 @@ export const method2 = () => "You have called Method 2";
 
 export const method3 = () => "You have called Method 3";
 
-const defaultMethod = () => "You have called the Default Method";
+const defaultMethod = () => "You have called the Default Method " + method1() ;
 
 export default defaultMethod;

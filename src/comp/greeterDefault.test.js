@@ -1,19 +1,37 @@
 const myModule = jest.requireActual("./greeterDefault");
 
-const spyDefault = jest.spyOn(myModule, "default").mockImplementation(() => 5);
-const spyMethod1 = jest.spyOn(myModule, "method1").mockImplementation(() => 23);
+it("call default", () => {
+   expect(myModule.default()).toBe('You have called the Default Method You have called Method 1');
+})
 
 it("spy on default", () => {
+  const spyDefault = jest.spyOn(myModule, "default").mockImplementation(() => 5);
   expect(spyDefault()).toBe(5);
+  spyDefault.mockRestore()
+  expect(myModule.default()).toBe('You have called the Default Method You have called Method 1');
 })
 
 it("spy on method1", () => {
+  const spyMethod1 = jest.spyOn(myModule, "method1").mockImplementationOnce(() => 23);
   expect(spyMethod1()).toBe(23);
+  expect(myModule.method1()).toBe("You have called Method 1");
 })
 
 //
 //
-// other way 
+// second way 
+//
+//
+
+// const myModule = jest.requireActual("./greeterDefault");
+
+// it("call default", () => {
+//   expect(myModule.default()).toBe('You have called the Default Method You have called Method 1');
+// })
+
+//
+//
+// 3rd way 
 //
 //
 

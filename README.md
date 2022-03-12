@@ -6,7 +6,7 @@ File `src/comp/Fetch.test.js` in line 15 resolves promise returned by mocked axi
 
 # act and fireEvent
 
-File `src/comp/InputField.test.js` in 3. test
+File `src/comp/InputField.test.js` shows testing of component that has state update
 
 # tests for default and named exports
 

@@ -6,6 +6,7 @@ import Fetch from './comp/Fetch'
 function App() {
   return (
     <div className="App">
+      <h1 data-testid='bigtitle'>title</h1>
       <Header />
       <Fetch />
     </div>

@@ -7,8 +7,9 @@ import InputField from './comp/InputField'
 function App() {
   return (
     <div className="App">
-      <Header />
-      <InputField showDiv={false} />
+      <Header text='this is header'/>
+      <InputField showDiv={true} />
+      <hr />
       <Fetch />
     </div>
   );

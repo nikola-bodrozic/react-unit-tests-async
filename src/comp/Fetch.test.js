@@ -1,8 +1,7 @@
 import React from "react";
 import {
   render,
-  waitForElement,
-  act
+  waitForElement
 } from "@testing-library/react";
 import "@testing-library/jest-dom";
 

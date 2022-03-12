@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header text='this is header'/>
-      <InputField showDiv={true} />
+      <InputField />
       <hr />
       <Fetch />
     </div>

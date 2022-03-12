@@ -11,7 +11,11 @@ it("spy on method1", () => {
   expect(spyMethod1()).toBe(23);
 })
 
-// or
+//
+//
+// other way 
+//
+//
 
 // import defaultMethod, { method1, method2, method3 } from "./greeterDefault";
 

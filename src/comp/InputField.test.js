@@ -8,27 +8,14 @@ import {
 
 describe('InputField component', () => {
 
-  test('div is shown', () => {
-    const { getByTestId } = render(<InputField showDiv={true} />);
-    const div = getByTestId('displaySearch')
-    expect(div).toBeTruthy()
-  });
-
-  test('div is hidden', () => {
-    const { queryByTestId, debug } = render(<InputField showDiv={false} />);
-    const div = queryByTestId('displaySearch')
-    //debug()
-    expect(div).toBeFalsy()
-  });
-
   test('await for change in input', async () => {
     await act(async () => {
-      const { getByTestId, debug } = render(<InputField showDiv={true} />);
+      const { getByTestId, debug } = render(<InputField />);
       const input = getByTestId('searchBar')
       const header = getByTestId('displaySearch')
-      //debug()
+      // debug()
       await fireEvent.change(input, { target: { value: 'mike' } })
-      //debug()
+      // debug()
       expect(header.innerHTML).toBe('mike')
     })
   });

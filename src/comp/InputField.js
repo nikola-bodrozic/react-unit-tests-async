@@ -5,8 +5,7 @@ function InputField({ showDiv }) {
   return (
     <div>
       <input type="text" data-testid="searchBar" onChange={(e) => setSearchWord(e.target.value)} />
-      <h1 data-testid="displaySearch">{searchWord}</h1>
-      {showDiv && (<div data-testid="divWeWantToShow">ini</div>)}
+      {showDiv && (<div data-testid="displaySearch">{searchWord}</div>)}
     </div>
   )
 }

@@ -8,6 +8,8 @@ File `src/comp/Fetch.test.js` in line 15 resolves promise returned by mocked axi
 
 File `src/comp/InputField.test.js` in 3. test
 
+# tests for default and named exports
+
+Files `src/comp/greeter.*`
+
 Execute tests `yarn test`
-
-

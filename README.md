@@ -10,6 +10,10 @@ File `src/comp/InputField.test.js` shows testing of component that has state upd
 
 # tests for default and named exports
 
-Files `src/comp/greeter.*`
+Files `src/comp/greeterDefault.*`
+
+# mock dependency in custom module, call it's parent and verify that mocked dependency was called
+
+File `src/greeterDefault.test.js`
 
 Execute tests `yarn test`

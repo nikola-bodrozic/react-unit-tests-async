@@ -19,19 +19,7 @@ it("spy on method1", () => {
 
 //
 //
-// second way 
-//
-//
-
-// const myModule = jest.requireActual("./greeterDefault");
-
-// it("call default", () => {
-//   expect(myModule.default()).toBe('You have called the Default Method You have called Method 1');
-// })
-
-//
-//
-// 3rd way 
+// second way ES6 module
 //
 //
 

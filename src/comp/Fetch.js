@@ -2,25 +2,25 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const useAxios = (url, setData) => {
-  useEffect(
-    () => {
-      let mounted = true;
+  useEffect(() => {
+    let mounted = true;
 
-      const loadData = async () => {
-        const result = await axios.get(url);
-        if (mounted) {
-          console.log(result.data)
+    const loadData = async () => {
+      if (mounted) {
+        try {
+          let result = await axios.get(url);
           setData(result.data);
+        } catch (error) {
+          console.error(error);
         }
-      };
-      loadData();
+      }
+    };
+    loadData();
 
-      return () => {
-        mounted = false;
-      };
-    },
-    [url]
-  );
+    return () => {
+      mounted = false;
+    };
+  }, [url]);
 };
 
 export default function Fetch({ url }) {

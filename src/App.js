@@ -3,6 +3,7 @@ import './App.css';
 import Header from './comp/Header';
 import Fetch from './comp/Fetch'
 import InputField from './comp/InputField'
+import Form from './comp/Form'
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <InputField />
       <hr />
       <Fetch />
+      <hr />
+      <Form />
     </div>
   );
 }

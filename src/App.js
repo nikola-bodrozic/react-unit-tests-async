@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './comp/Header';
-import Fetch from './comp/Fetch'
+import AxiosGet from './comp/AxiosGet'
 import InputField from './comp/InputField'
 import Form from './comp/Form'
 
@@ -11,7 +11,7 @@ function App() {
       <Header text='this is header'/>
       <InputField />
       <hr />
-      <Fetch />
+      <AxiosGet />
       <hr />
       <Form />
     </div>

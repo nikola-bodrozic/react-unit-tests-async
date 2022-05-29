@@ -9,6 +9,7 @@ const FormInput = (props) => {
     setFocused(true);
   };
   console.log(label)
+  
   return (
     <div className="formInput">
       <label>{label}</label>
@@ -23,4 +24,4 @@ const FormInput = (props) => {
   );
 };
 
-export const FormInputMemo = React.memo(FormInput);
+export default FormInput;

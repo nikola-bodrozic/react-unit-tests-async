@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FormInputMemo } from "./FormInput";     
+import FormInput from "./FormInput";     
 import '../App.css';
 
 const Form = () => {
@@ -57,7 +57,7 @@ const Form = () => {
       <form onSubmit={handleSubmit}>
         <h1>Register</h1>
         {inputs.map((input) => (
-          <FormInputMemo
+          <FormInput
             key={input.id}
             {...input}
             value={values[input.name]}

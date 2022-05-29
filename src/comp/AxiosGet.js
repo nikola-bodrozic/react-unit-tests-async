@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-export default function Fetch() {
+export default function AxiosGet() {
   const [data, setData] = useState(null);
+
   useEffect(() => {
     let mounted = true;
 
@@ -16,6 +17,7 @@ export default function Fetch() {
         }
       }
     };
+    
     loadData();
 
     return () => {
